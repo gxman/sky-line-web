@@ -1,0 +1,10 @@
+{
+    "msg": "Request method 'GET' not supported",
+    "status": "10000",
+    "data": {
+        "data": null,
+        "status": "-1",
+        "msg": "系统错误Request method 'GET' not supported"
+    },
+    "debugMsg": null
+}

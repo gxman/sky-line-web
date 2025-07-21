@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redirecting...</title>
+  <script>
+    window.onload = function () {
+      const lang = navigator.language || navigator.userLanguage;
+      const lowerLang = lang.toLowerCase();
+
+      if (lowerLang.startsWith('zh')) {
+        window.location.href = 'zh/index.html';
+      } else if (lowerLang.startsWith('ja') || lowerLang.startsWith('jp')) {
+        window.location.href = 'jp/index.html';
+      } else {
+        window.location.href = 'en/index.html';
+      }
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting to your language version...</p>
+</body>
+</html>
